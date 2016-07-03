@@ -1,9 +1,11 @@
+//document ready and button click function
 $(document).ready(function() {
   $('#button').click(function() {
   $('#quotes').text(quotes[getQuote()]);
   });
 });
 
+//define an array
 var quotes = ["There is no hurry to find out where you should be.... you're never meant to be in only one place... you are always moving forward... life is a road with no parking spots.",
 "Freedom is being you without caring what others think.",
 "If you are making mistakes it means you are out there doing something.",
@@ -14,6 +16,7 @@ var quotes = ["There is no hurry to find out where you should be.... you're neve
 "To understand someone, find out how he spends his money.", 
 "The educated do not share a common body of information, but a common state of mind."];
 
+//function to generate quotes
 function getQuote() {
   return Math.floor(Math.random() * quotes.length);
 }
